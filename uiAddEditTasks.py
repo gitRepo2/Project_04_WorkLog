@@ -11,11 +11,11 @@ import dbInteraction
 def add_task_ui():
     """This method take self as argument and ask the user to input
     all necessary information to add a task. The new task is added to
-    the CSV file."""
+    the database."""
     while True:
         # Ask for the name of the user
-        first_name = input("Please key in your first name of the task. ")
-        family_name = input("Please key in your last name of the task. ")
+        first_name = input("Please key in your first name. ")
+        family_name = input("Please key in your last name. ")
         task_title = input("Please key in the name of the task. ")
         print("\nWhen is this task due? ")
         while True:
@@ -95,5 +95,5 @@ def edit_task(task):
                                  utc_date, time_spent, notes)
     print('Task was successfully edited.')
 
-checker = pep8.Checker('uiAddEditDelTasks.py')
+checker = pep8.Checker('uiAddEditTasks.py')
 checker.check_all()
