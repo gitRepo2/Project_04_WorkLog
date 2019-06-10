@@ -21,3 +21,8 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+
+# Python
+__pycache__
+worklog.db
+worklog.db
